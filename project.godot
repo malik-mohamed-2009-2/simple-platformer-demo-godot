@@ -10,12 +10,15 @@ config_version=5
 
 [application]
 
-config/name="Casual 2D Platformer"
-config/description="✨ Casual 2D Platformer Demo ✨
+config/name="Simple Platformer Demo"
+config/description="✨ Simple Platformer Demo ✨
 😎 - Best for beginners and your first game
 🕹️ - Better controls with TouchScreen"
 run/main_scene="uid://dkech5tm205l6"
-config/features=PackedStringArray("4.6", "GL Compatibility")
+config/features=PackedStringArray("4.7", "GL Compatibility")
+run/max_fps=60
+boot_splash/bg_color=Color(1, 1, 1, 1)
+boot_splash/image="uid://ooi1u46dnw01"
 
 [audio]
 
@@ -30,12 +33,16 @@ JumpSfx="*uid://cititixminc7o"
 
 [display]
 
-window/size/viewport_width=256
-window/size/viewport_height=144
+window/size/viewport_width=320
+window/size/viewport_height=180
 window/size/mode=3
 window/size/resizable=false
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
+
+[gui]
+
+theme/custom_font="uid://du6a2icvc6ud7"
 
 [internationalization]
 
@@ -43,11 +50,10 @@ rendering/root_node_layout_direction=1
 
 [physics]
 
+2d/physics_engine="GodotPhysics2D"
 3d/physics_engine="Dummy"
 
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"

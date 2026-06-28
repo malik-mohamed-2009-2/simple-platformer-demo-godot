@@ -4,4 +4,5 @@
 
 [node name="Coin" type="AudioStreamPlayer" unique_id=1909896615]
 stream = ExtResource("1_2grut")
+volume_db = -5.0
 bus = &"Sfx"
